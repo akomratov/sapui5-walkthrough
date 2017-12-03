@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+   <head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta charset="utf-8">
+ 	<title>Walkthrough - step 07</title>
+      <script
+         id="sap-ui-bootstrap"
+         src="http://localhost:8098/sapui5/1.48.11/sap-ui-core.js" 
+         data-sap-ui-theme="sap_belize"
+         data-sap-ui-libs="sap.m"
+         data-sap-ui-compatVersion="edge"
+         data-sap-ui-resourceroots='{ "demo.wt": "./" }'
+         data-sap-ui-preload="async">
+      </script>
+      <script>
+         "use strict";
+         sap.ui.getCore().attachInit(function () {
+         	sap.ui.xmlview({
+         		viewName: 'demo.wt.view.App'
+         		}).placeAt('sapui5-content');
+         });
+      </script>
+   </head>
+   <body>
+      <div><ul><b>Walkthrough step 07:</b>
+      <li>XMLView</li>
+      <li>Controller</li>
+      <li>MessageToast in the Controller</li>
+      <li>JSONModel</li>
+      </ul></div>
+      <div class='sapUiBody' id='sapui5-content'></div>
+   </body>
+</html>
