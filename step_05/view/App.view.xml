@@ -1,0 +1,7 @@
+<mvc:View
+   controllerName="demo.wt.controller.App"
+   xmlns="sap.m"
+   xmlns:mvc="sap.ui.core.mvc">
+	<Text text="Test text contol inside XMLView"/>
+	<Button text="Demo button" press="onDemoButtonPress"/>
+</mvc:View>
