@@ -1,0 +1,27 @@
+<mvc:View 
+	controllerName="demo.wt.controller.App" 
+	xmlns="sap.m" 
+	xmlns:mvc="sap.ui.core.mvc" 
+	displayBlock="true">
+	<App>
+		<pages>
+			<Page title="{i18n>homePageTitle}">
+				<content>
+					<Panel headerText="{i18n>helloPanelTitle}">
+						<content>
+							<Text text="Test text contol inside XMLView"/>
+							<Button 
+								text="{i18n>titleDemoButton}" 
+								press="onDemoButtonPress"/>
+							<Input 
+								value="{/target/name}" 
+								description="Target name: {/target/name}" 
+								valueLiveUpdate="true" 
+								width="60%"/>
+						</content>
+					</Panel>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
