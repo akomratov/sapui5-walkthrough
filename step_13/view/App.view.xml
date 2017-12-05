@@ -1,0 +1,35 @@
+<mvc:View 
+	controllerName="demo.wt.controller.App" 
+	xmlns="sap.m" 
+	xmlns:mvc="sap.ui.core.mvc" 
+	displayBlock="true">
+	<App>
+		<pages>
+			<Page title="{i18n>homePageTitle}">
+				<content>
+					<Panel 
+						class="sapUiResponsiveMargin"
+						width="auto"
+						headerText="{i18n>helloPanelTitle}">
+						<content>
+							<Text 
+								text="Test text contol inside XMLView"
+								class="sapUiSmallMargin"/>
+							<Button 
+								text="{i18n>titleDemoButton}" 
+								press="onDemoButtonPress"
+								class="sapUiSmallMarginEnd"/>
+							<Input 
+								value="{/target/name}" 
+								valueLiveUpdate="true" 
+								width="60%"/>
+							<Text
+								text="Hello {/target/name}"
+								class="sapUiSmallMargin"/>
+						</content>
+					</Panel>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
