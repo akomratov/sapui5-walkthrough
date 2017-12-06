@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+   <head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta charset="utf-8">
+ 	<title>Walkthrough - step 19</title>
+      <script
+         id="sap-ui-bootstrap"
+         src="http://localhost:8098/sapui5/1.48.11/sap-ui-core.js" 
+         data-sap-ui-theme="sap_belize"
+         data-sap-ui-libs="sap.m"
+         data-sap-ui-compatVersion="edge"
+         data-sap-ui-resourceroots='{ "demo.wt": "./" }'
+         data-sap-ui-preload="async">
+      </script>
+      <script>
+         sap.ui.getCore().attachInit(function () {
+            new sap.m.Shell({
+               app: new sap.ui.core.ComponentContainer({
+            	   name : "demo.wt"
+            	})
+            }).placeAt("sapui5-content");
+         });
+      </script>
+   </head>
+   <body>
+   	  <div class='sapUiBody' id='sapui5-content'></div>
+      <div><ul><b>Walkthrough step 19:</b>
+      <li>XMLView</li>
+      <li>Controller</li>
+      <li>MessageToast in the Controller</li>
+      <li>JSONModel</li>
+      <li>i18n</li>
+      <li>Component</li>
+      <li>App descriptor (manifest.json)</li>
+      <li>Pages and Panels</li>
+      <li>Shell Control as Container</li>
+      <li>Margins and Paddings</li>
+      <li>Custom CSS and Theme colors</li>
+      <li>Nested views</li>
+      <li>Dialogs and Fragments</li>
+      <li>Fragment Callbacks</li>
+      <li>Icons</li>
+      <li>Reuse Dialogs</li>
+      </ul></div>
+   </body>
+</html>
